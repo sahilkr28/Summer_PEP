@@ -6,8 +6,9 @@ int main(){
     int maxSum = 0;
     for(int i = 0; i < 3; i++){
         int sum = 0;
+        
         for(int j = 0; j < 3; j++){
-            sum+=arr[i][j];
+            sum+=arr[j][i];
             maxSum = max(sum, maxSum);
         }
         cout<<sum<<endl;
